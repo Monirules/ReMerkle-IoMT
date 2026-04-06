@@ -1,16 +1,5 @@
 # ReMerkle: Proof of Reputation-Driven Federated Learning with Compact Merkle Verification for Consumer-centric IoMT
 
-&lt;p align="center"&gt;
-  &lt;img src="https://img.shields.io/badge/IEEE%20Transactions-Under%20Review-blue.svg" alt="Publication Status"/&gt;
-  &lt;img src="https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white" alt="Python Version"/&gt;
-  &lt;img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/&gt;
-  &lt;img src="https://img.shields.io/badge/Blockchain-Ethereum-3C3C3D?logo=ethereum&logoColor=white" alt="Ethereum"/&gt;
-&lt;/p&gt;
-
-&lt;p align="center"&gt;
-  &lt;b&gt;🏥 Secure Federated Learning for Medical IoT with 97.99% Reduced Blockchain Overhead&lt;/b&gt;&lt;br&gt;
-  &lt;i&gt;WBAN-optimized • Byzantine-Robust • Consumer-Affordable&lt;/i&gt;
-&lt;/p&gt;
 
 ---
 
@@ -19,6 +8,9 @@
 **ReMerkle** is a secure, resource-efficient framework designed to protect Internet of Medical Things (IoMT) devices in Wireless Body Area Networks (WBAN). It leverages Federated Learning (FL) to preserve privacy, but adds a critical security layer: **Proof of Reputation-Driven (PoR)** verification.
 
 Traditional blockchain-based FL is too expensive for consumer electronics due to massive gas costs. ReMerkle solves this by using **Compact Merkle Verification**, storing only the Merkle Root on-chain while providing a **97.99% reduction** in blockchain overhead.
+
+
+
 
 ### ✨ Key Features
 
@@ -32,11 +24,8 @@ Traditional blockchain-based FL is too expensive for consumer electronics due to
 
 ## 🚀 The 5-Step Secure Workflow
 
-&lt;p align="center"&gt;
-  &lt;img src="docs/figures/ieee_methodology_diagram.png" alt="ReMerkle Architecture" width="800"/&gt;
-&lt;/p&gt;
-
 The ReMerkle framework follows a structured pipeline to ensure that only high-quality, trusted updates influence the global health model:
+<img width="8890" height="3570" alt="Fig1" src="https://github.com/user-attachments/assets/53e88f45-ccd9-4ee8-a774-fc1c442504ff" />
 
 ### Step 1: Local Training (Sensor Level)
 WBAN nodes train lightweight models locally on 3-axis accelerometer data to ensure raw medical data never leaves the device.
@@ -82,23 +71,14 @@ Our simulation on the **WBAN HAR Dataset** (Nodes 1–5, 5 Activity Classes) dem
 - **Malicious Mitigation**: Nodes that fail the Step 5 Audit are immediately dropped from the global model, preserving accuracy
 - **Consumer Viability**: Transaction costs drop from ~$141 to **$0.60**, making it affordable for consumer-centric health monitoring
 
+<img width="11780" height="7822" alt="Fig5" src="https://github.com/user-attachments/assets/a136ea92-318d-437c-9dcd-7570e7d45a0b" />
+
 ---
 
-## 📂 Repository Structure
+<img width="11120" height="7913" alt="Fig3" src="https://github.com/user-attachments/assets/e51a3187-87e0-40cb-b4fa-0f713ca72710" />
 
-```text
-ReMerkle/
-├── 📁 data/                      # WBAN HAR Dataset (3-axis accelerometer)
-├── 📁 src/
-│   ├── data_loader.py            # Standardizes sensor data & person-based splitting
-│   ├── local_model.py            # Lightweight Softmax Regression (WBAN-optimized)
-│   ├── reputation_gates.py       # Tiered Gating logic (Cosine, Beta, Entropy)
-│   ├── fl_server.py              # Aggregator, Merkle Tree builder, Smart Contract Judge
-│   ├── merkle_utils.py           # Cryptographic hashing & Merkle Proof verification
-│   └── blockchain_analysis.py    # IEEE-standard research plots & metrics
-├── 📁 contracts/
-│   └── ReMerkleValidator.sol     # Solidity smart contract for on-chain verification
-├── 📁 docs/
-│   └── figures/                  # Architecture diagrams & result plots
-├── main.ipynb                    # Interactive simulation notebook
-└── requirements.txt              # Python dependencies
+---
+
+<img width="9527" height="7131" alt="img13" src="https://github.com/user-attachments/assets/70625bca-a77d-491c-b31d-1bcb811b1b0f" />
+
+---
